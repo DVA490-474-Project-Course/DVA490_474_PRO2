@@ -1,0 +1,270 @@
+%===============================================================================
+\section{Work Package Status}
+
+% !!! Reference back to the project plan !!!
+
+% !!! ONLY WORK PACKAGES SHOULD BE COVERED !!!
+
+All information regarding the work packages which are apart of the 7th of October to 8th of November work period are covered in the following subsections. Note that only work packages are covered.
+%-----------------------------------------------
+% Description of columns:
+
+% ID: ID of task/workpackage/deliverable.
+
+% Name: Name of task/workpackage/deliverable.
+
+% Planning status: "On-track" or "Off-track".
+
+% Completion status:  "Not started", "On Hold", "Cancelled", "In Progress", or "Completed".
+
+% Accountability: People responsible for the package.
+
+% Recovery plan: If a package is "Off-track" then here you write the plan to get it back "On-track".
+
+% Progress: Summary of progress, highlighting key outcomes and which tasks/deliverables have been completed. Include both ID and name of tasks and deliverables.
+
+% Issues: List challenges/issues.
+
+% Next steps: Outline the work package's next set of tasks or milestones. List the next deliverables and task which will be done, their ID and name.
+%-----------------------------------------------
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.1 Simulate 12 robots}
+\begin{itemize}
+    \item \textbf{Planning status}: On-track
+    \item \textbf{Completion status}: Completed
+    \item \textbf{Accountability}: Aaiza Aziz Khan, Shruthi Puthiya Kunnon, Emil Åberg
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Completed all the deliverables and tasks.
+    \item \textbf{Issues}: N/A
+    \item \textbf{Next steps}: N/A
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.1.2 Simulation interface}
+\begin{itemize}
+    \item \textbf{Planning status}: On-track
+    \item \textbf{Completion status}: Completed
+    \item \textbf{Accountability}: Aaiza Aziz Khan, Shruthi Puthiya Kunnon, Emil Åberg
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Completed all the deliverables and tasks.
+    \item \textbf{Issues}: grSim crashed suddenly and remained in an unusable state until it was fixed by following the troubleshooting instructions in the \href{https://github.com/RoboCup-SSL/grSim/blob/master/INSTALL.md}{INSTALL.md file} available in the \href{https://github.com/RoboCup-SSL/grSim}{grSim repository}. Additionally, a way to control simulation has still not been developed.
+    \item \textbf{Next steps}: N/A
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.2 \acs{ssl} interface}
+\begin{itemize}
+    \item \textbf{Planning status}: On-track
+    \item \textbf{Completion status}: Completed
+    \item \textbf{Accountability}: Aaiza Aziz Khan, Shruthi Puthiya Kunnon, Emil Åberg
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Completed all the deliverables and tasks.
+    \item \textbf{Issues}: There are some limitations in how well the clients for ssl-vision and ssl-game-controller can be tested automatically and independently with Google Test; they rely on \ac{udp} streams which need to be generated while the clients are executing in parallel. Therefore, testing of \textit{\acs{ssl} interface} has been complemented with manual tests, where \textit{\acs{ssl} interface} is integrated with ssl-vision and ssl-game-controller.
+    \item \textbf{Next steps}: N/A
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.3 Hardware interface}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Mudar Ibrahim, Aaiza Aziz Khan, Shruthi Puthiya Kunnon, Fredrik Westerbom, Emil Åberg
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Currently working on 1.3.5 \textit{Sensor interface}, specifically 1.3.5.1 \textit{\acs{imu}}. 
+    \item \textbf{Issues}: Need admin access for installation of STM32CubeIDE to be able to write code for the STM32 board.
+    \item \textbf{Next steps}: Sub-work package 1.3.5 \textit{Sensor interface}. 
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.3.5 Sensor interface}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Mudar Ibrahim, Aaiza Aziz Khan, Shruthi Puthiya Kunnon, Fredrik Westerbom, Emil Åberg
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Deliverable 1.3.5.1 \textit{\acs{imu}} is ongoing however, implementation of \ac{spi} has been cancelled due to the support of \ac{i2c} for the \acs{imu}, \ac{lidar}, and RGB sensor. 
+    \item \textbf{Issues}: Unforeseen issues understanding and implementing the skeleton code generated by the graphical programming environment. Therefore the implementation of code has been delayed.
+    \item \textbf{Next steps}: 1.3.5.1.2. \textit{\acs{i2c} implementation}, 1.3.5.1.3. \textit{\acs{uart} implementation}. Then the rest of the Deliverables 1.3.5.2 - 1.3.5.6
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.4 Communication protocol}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: On Hold
+    \item \textbf{Accountability}: Aaiza Aziz Khan, Shruthi Puthiya Kunnon, Emil Åberg
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Work has begun on establishing communication between PC and Raspberry Pi (1.4.1).   
+    \item \textbf{Issues}: HDMI is not available.
+    \item \textbf{Next steps}: Ability to send and receive data.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+\subsection*{1.5 Individual robot behaviour}
+\begin{itemize}
+    \item \textbf{Planning status}: Off-track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Carl Larsson
+    \item \textbf{Recovery plan}: Enlist additional resources internally (Pontus Svensson, the only other experianced nav2 and \ac{ros2} developer) and enlist external resources (post the problem on Stack Exchange).
+    \item \textbf{Progress}: All other deliverables and tasks except 1.5.5 \textit{nav2 stack configuration} and the sub-work package 1.5.6 \textit{Develop supporting functions} have been completed. 1.5.5 \textit{nav2 stack configuration} is currently being worked on.
+    \item \textbf{Issues}: Creating proper unit and integration tests for more advanced and interwoven parts of the code. 1.5.5 \textit{nav2 stack configuration} is proving problematic and has taken significantly longer time to complete than expected, this has caused 1.5.6 to be placed On Hold.
+    \item \textbf{Next steps}: 1.5.6 \textit{Develop supporting functions}.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.5.6 Develop supporting functions}
+\begin{itemize}
+    \item \textbf{Planning status}: On-track
+    \item \textbf{Completion status}: On Hold
+    \item \textbf{Accountability}: Carl Larsson
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Work has started on 1.5.6.1 \textit{Run Simulation/Hardware interface}, specifically integrating the \textit{Simulation interface} (1.5.6.1.1), no noteworthy progress has been made thus far.
+    \item \textbf{Issues}: Waiting for 1.4 \textit{Communication protocol} to be completed before being able to start working on 1.5.6.2 \textit{Ability to send data}, \textit{1.5.6.3 Ability to receive data}, \textit{1.5.6.4 Initialize the robot}.
+    \item \textbf{Next steps}: 1.5.6.2 \textit{Ability to send data}, 1.5.6.3 \textit{Ability to receive data}, 1.5.6.4 \textit{Initialize the robot}.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{1.6 Collective robot behaviour}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Viktor Eriksson, Jacob Johansson
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: Completed 1.6.1 \textit{Research \acs{ai}-algorithms}. Working on task 1.6.2.1 \textit{Develop the \acs{ai}-algorithm}, finishing the structure for the \ac{mappo} algorithm. 1.6.4 is currently in progress and will result in the ability to receive data from the external systems.
+    \item \textbf{Issues}: Lack of documentation on libraries (i.e. PyTorch) has slowed down the development of the algorithm and functions.
+    \item \textbf{Next steps}: 1.6.3 \textit{Be able to send data}.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{2.1 Base design}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Anton Grusell, Johanna Melander, Pontus Svensson, Fredrik Westerbom
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: 2.1.1 \textit{Hardware design to meet \acs{ssl}-rules} and 2.1.2 \textit{Design modular components} completed. 2.1.3 \textit{3D-design} and 2.1.4 \textit{Circuit design and integration} is in progress.
+    \item \textbf{Issues}: Components went out of stock. Restrictions on which components could be used due to collaboration with \ac{udea}.
+    \item \textbf{Next steps}: 2.1.3 \textit{3D-design}, 2.1.4 \textit{Circuit design and integration}.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{2.1.3 3D-design}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Anton Grusell, Johanna Melander, Pontus Svensson, Fredrik Westerbom
+    \item \textbf{Recovery plan}: N/A
+    \item \textbf{Progress}: 2.1.3.1 \textit{Chassis design} waiting for completion of the circuits before continuing. 2.1.3.2 \textit{Wheels design} is in the final stages, awaiting feedback from the manufacturer. 2.1.3.3, 2.1.3.4 and 2.1.3.5 are all in progress. 
+    \item \textbf{Issues}: Size requirements makes every decision take more time. As more components are finished, revisions need to be made to ensure compatibility.
+    \item \textbf{Next steps}: Finish 2.1.3.3, 2.1.3.4, 2.1.3.5.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\subsection*{2.1.4 Circuit design and integration}
+\begin{itemize}
+    \item \textbf{Planning status}: On-Track
+    \item \textbf{Completion status}: In Progress
+    \item \textbf{Accountability}: Anton Grusell, Johanna Melander, Pontus Svensson, Fredrik Westerbom
+    \item \textbf{Recovery plan}: If certain circuits are not completed in a timely manner, those functionalities will be excluded from the robot.
+    \item \textbf{Progress}: 2.1.4.1 \textit{Design powertrain circuit} is completed. 2.1.4.2 \textit{Design kicker circuit} is completed. 2.1.4.3 \textit{Design dribbler circuit} is completed. 2.1.4.4 \textit{Design microcontroller circuit} is mostly completed, awaiting which type of connector is to be used for mainboard to kicker board connection. 2.1.4.5 \textit{Design \acs{ic} for sensors} is completed. 2.1.4.5.3 \textit{Design break beam \acs{ic}} was cancelled. 2.1.4.6 \textit{Integrate the circuits} is in progress, the pins for the kicker control needs to be decided before the deliverable is completed. 2.1.4.7 \textit{Design mainboard \acs{pcb}} is in progress, dependent on 2.1.4.6. 2.1.4.8 \textit{Design carrier \acs{pcb} for motor driver} is completed. 2.1.4.9 \textit{Design kicker \acs{pcb}} is in progress. 2.1.4.10 \textit{Design basestation \acs{pcb}} was cancelled due to time limitations.
+    \item \textbf{Issues}: Finding suitable board-to-board connectors is difficult and expensive, leading to a less suitable option being chosen.
+    \item \textbf{Next steps}: 2.2.1 \textit{Manufacture \acs{pcb}}.
+\end{itemize}
+
+%===============================================================================
+
+\begin{comment}
+\onecolumn
+\begin{longtable}{|c|m{0.09\textwidth}|m{0.07\textwidth}|m{0.095\textwidth}|m{0.115\textwidth}|m{0.12\textwidth}|m{0.085\textwidth}|m{0.09\textwidth}|m{0.085\textwidth}|} \hline
+\centering
+    \textbf{ID} & \textbf{Name} & \textbf{Planning status} & \textbf{Completion status} & \textbf{Accountability} & \textbf{Recovery plan} & \textbf{Progress} & \textbf{Issues} & \textbf{Next steps} \\ \hline
+    %---------------------------------------
+    % Communication
+    %---------------------------------------
+    1.1.1 & Setup grSim & On track & Completed & Emil, Aaiza, Shruthi & If anything goes wrong, settings can be restored from grSim Repository & Completed & No issues yet & N/A \\ \hline
+    1.1.2.1 & Integrate Protobuf & On track & Completed & Emil, Aaiza, Shruthi & N/A & Completed & No issues yet & N/A \\ \hline
+    1.1.2.2 & Move a single robot & On track & Completed & Emil, Aaiza, Shruthi & N/A & Completed & No issues yet & Unit test \\ \hline
+    1.1.2.3 & Activate kicker on a single robot & On track & Completed & Emil, Aaiza, Shruthi & N/A & Completed & No issue yet & Unit test \\ \hline
+    1.1.2.4 & Execute any desired control over any chosen robot in grSim & On track & Completed & Emil, Aaiza, Shruthi & N/A & Completed & No issue yet & Unit test \\ \hline
+    1.2.1 & Integrate ssl-vision & On track & Completed & Emil, Aaiza, Shruthi & N/A & Completed & No issue yet & N/A \\ \hline
+    1.2.2 & Integrate ssl-game-controller (human referee and optional auto referee & On track & Completed & Emil, Aaiza, Shruthi & N/A & Completed & No issue yet & Unit tests \\ \hline
+    1.2.3 & Develop an automatic game controller (will be used when training the AI) & On track & In progress & Emil, Aaiza, Shruthi & N/A & Unknown & No issues yet & implement own timer \\ \hline
+    1.3.1 & Wheel motor interface & On track & Not started & Not decided yet & N/A & 0\% & None & N/A \\ \hline
+    1.3.2 & Kicker interface & On track & Not started & Not decided yet & N/A & 0\% & None & N/A \\ \hline
+    1.3.3 & Dribbler interface & On track & Not started & Not decided yet & N/A & 0\% & None & N/A \\ \hline
+    1.3.4 & Sensor interface & On track & Not started & Not decided yet & N/A & 0\% & None & N/A \\ \hline
+    1.4.1 & Integrate Protobuf for Communication Protocol & On track & Not started & Emil, Aaiza, Shruthi & N/A & 0\% & None & N/A \\ \hline
+    1.4.2 & Utilize ROS2 for Communication Protocol & On track & Not started yet & Emil, Aaiza, Shruthi & N/A & 0\% & None & N/A \\ \hline
+    1.4.3 & Ability to switch between two carrier frequencies & On track & Not started yet & Emil, Aaiza, Shruthi & N/A & 0\% & None & N/A \\ \hline
+    %---------------------------------------
+    % Individual robot behaviour
+    %---------------------------------------
+    1.5.1 & Research viable path planning algorithms & On-track & Completed & Carl Larsson & N/A & Completed & No issues encountered & N/A \\ \hline
+    1.5.2 & Integrate ROS2 & On-track & Completed & Carl Larsson & N/A & Completed & Uncertainty of how to interact with Hardware Interface & N/A \\ \hline
+    1.5.3 & Develop path planning algorithm & On-track & Completed & Carl Larsson & N/A & Completed & Difficult to unit test since it is dependent on the entire nav2 stack & N/A \\ \hline
+    1.5.4 & Implement robot ability to shoot & On-track & Completed & Carl Larsson & N/A & Completed & Difficult to unit test since it is dependent on other parts of the system & N/A \\ \hline
+    1.5.5.1 & Initialize the robot & On-track & Not started & Carl Larsson & N/A & No tasks completed, awaiting communication protocol completion & No issues encountered yet & Next task 1.5.5.1.1 \\ \hline
+    1.5.5.2 & Ability to send data & On-track & Not started & Carl Larsson & N/A & No tasks completed, awaiting communication protocol completion & No issues encountered yet & Next task 1.5.5.2.1 \\ \hline
+    1.5.5.3 & Ability to receive data & On-track & Not started & Carl Larsson & N/A & No tasks completed, awaiting communication protocol completion & No issues encountered yet & Next task 1.5.5.3.1 \\ \hline
+    %---------------------------------------
+    % Collective robot behaviour
+    %---------------------------------------
+    1.7 & Collective robot behaviour & On track & in progress & Jacob, Viktor & N/A & Finishing the structure of the MAPPO algorithm, some missing functions is needed and communication to the grSim for training & Lack of documentation (MAPPO, pytorch, previous competitors) & Simulate in the real environment. \\ \hline
+    1.7.1 & Using Artificial Intelligence for strategy planning & On track & Not started & Jacob, Viktor & Recover the saved model with best result & No finished model yet, thus the reinforced learning will be used to gain strategy planning & No issues encountered yet & Train the AI-algorithm \\ \hline
+    1.7.1.1 & Research for the AI-algorithms & Done & Completed & Jacob, Viktor & N/A & Completed & Lack of documentation (MAPPO, pytorch, previous competitors) & Develop the AI-algorithm\\ \hline
+    1.7.1.2 & Develop the AI-algorithm & On track & In progress & Jacob, Viktor & Upload all files to Git & 60\% & Lacking information of the C++ pytorch api & Merge to ssl-interface to run in grSim \\ \hline
+    1.7.1.3 & Train the AI-algorithm & On track & Not started & Jacob, Viktor & N/A & 0\% & N/A & Develop into hardware \\ \hline
+    
+    %---------------------------------------
+    % Hardware
+    %---------------------------------------
+    2.1.1 & Hardware design to meet SSL-rules & On track & Done &  Anton, Pontus, Fredik, Johanna & N/A & Completed & N/A & N/A \\ \hline
+    2.1.2 & Design modular components & On track & Done &  Anton, Pontus & N/A & Completed & N/A & N/A \\ \hline
+    2.1.3 & 3D-Design & On track & In progress & Anton & N/A & 70\% & Final \ac{pcb} are not manufactured yet & Waiting for the \ac{pcb} to be manufactured\\ \hline
+    %2.1.2.1 & Chassi design & TEXT & in progress & Anton & unknown & 70\% & No issues yet & waiting for the circuit board designs. \\ \hline
+    %2.1.2.2 & Wheels design & On track & Completed & Anton, Johanna & unknown & Completed & No issues yet & Have the parts manufactured. \\ \hline
+    2.1.4.1 & Design powertrain circuit & Late & in progrss & Pontus & N/A & 90\% & Due to delay in approval of components the workpackage has been delayed & Finish the circuit\\ \hline
+    2.1.4.2 & Design kicker circuit & On track & Completed & Johanna & N/A & Completed & N/A & N/A\\ \hline
+    %2.1.3.1 & Design Powertrain & TEXT & TEXT &  & TEXT & TEXT & TEXT & TEXT \\ \hline
+    %2.1.3.2 & Design Kicker & Late & In progress & Johanna & TEXT & 70\% & Switched a key component, so the circuit needs to be updated & Update the circuit \\ \hline
+    2.1.4.3 & Design Dribbler & Late & In progress & Anton & N/A & 80\% & More difficult to design in a way that makes it fit than initially thought. &  N/A \\ \hline
+    2.1.4.4 & Design microcontroller circuit & Late & In progress & Pontus & N/A & 70\% & Due to delay in choosing \ac{mcu} the circuit is not completed & Complete the circuit\\ \hline
+    2.1.4.5 & Design \ac{ic} for sensors & On track & Completed & Fredrik & N/A & Completed & None & N/A \\ \hline
+    % 2.1.4.1 & Design encoder \ac{ic} & On track & Completed & Fredrik & N/A & Completed & None & Unit test (task 2.2.1.6) \\ \hline
+    % 2.1.4.2 & Design Break Beam \ac{ic} & On track & Completed & Fredrik & N/A & Completed & None & Unit test (task 2.2.1.5) \\ \hline
+    % 2.1.4.3 & Design \ac{imu} \ac{ic} & On track & Completed & Fredrik & N/A & Completed & None & Unit test (task 2.2.1.4 \\ \hline    
+    2.1.4.6 & Integrate the circuits & Late & In progress & Pontus & N/A & 50\% & Waiting on 2.1.4.1 and 2.1.4.4 & Finish the dependent tasks \\ \hline
+    2.1.4.7 & Design mainboard \ac{pcb} & Late & In progress & Pontus & N/A & 30\% & N/A & Finish dependent workpackages. \\ \hline
+    2.1.4.8 & Design carrier \ac{pcb} for motor driver & On track & In progress & Pontus & A design was received from Delft Mercurians SSL team. & 90\% & N/A & N/A \\ \hline
+    2.1.4.9 & Design kicker PCB & On track & Not started & Johanna & N/A & 0\%& N/A &\\ \hline
+    2.1.4.10 & Design basestation \ac{pcb} & On track & In progress & Pontus & Basestation is based on Tiger Mannheim & Completed & Some components are difficult to source & Manufacture the \ac{pcb}. \\ \hline 
+    2.2.1 & Manufacture \ac{pcb} & On track & Not started & Pontus & If no sponsor is found, PCBway will be used to manufacture. & 0\% & Difficulties finding a sponsor. & Find a sponsor. \\ \hline
+    2.3.1 & Test motors & On track & Not started & Pontus & N/A & 0\% & N/A & N/A \\ \hline
+    2.3.2 & Test kicker & On track & Not started & Johanna & N/A & 0\% & N/A & N/A \\ \hline
+    2.3.3 & Test Dribbler & On track & Not started & Anton & N/A & 0\% & N/A & N/A \\ \hline
+    2.3.4 & Test sensors & On track & Not started & Fredrik & N/A & 0\% & N/A & N/A \\ \hline
+    2.3.5 & Validate the integrated circuits & On track & Not started & Fredrik, Pontus, Anton, Johanna & N/A & 0\% & N/A & N/A \\ \hline
+    2.4.1 & Basestation communication & On track & Not started & Fredrik & N/A & 0\% & N/A & N/A \\ \hline
+    2.4.2 & Motor driver interface & On track & Not started & Pontus & N/A & 0\% & N/A & N/A \\ \hline
+    2.4.3 & Kicker interface & On track & Not started & Johanna & N/A & 0\% & N/A & N/A \\ \hline
+    2.4.4 & Develop Dribbler interface & On track & Not started & Anton & N/A & 0\% & N/A & N/A \\ \hline
+    
+    \caption{The status of each work package which is part of the time period from 7th of October to 8th of November.}
+    \label{tab:work_package_status}
+\end{longtable}
+\twocolumn
+\end{comment}
+
+%===============================================================================

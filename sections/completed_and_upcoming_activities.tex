@@ -1,0 +1,209 @@
+%===============================================================================
+\section{Completed and Upcoming Activities}
+
+% Milestones achieved
+The project has achieved the following milestones thus far:
+\begin{itemize}
+    \item \textit{Simulation interface} done
+    \item \textit{SSL interface} done
+\end{itemize}
+% Completed and Upcoming Activities
+The completed and the upcoming activities for the project are shown in Table.\:\ref{tab:activity_status}, which is the \ac{wbs} with the addition of a new column indicating the status of the activity. Note that any activity which is outside of the next work period, spanning from November 8 to December 6, is seen as N/A (-).
+
+\onecolumn
+\begin{longtable}{|c|c|m{0.6\textwidth}|c|} \hline
+    \centering
+%-------------------------------------------------------------------------------
+    \textbf{ID} & \textbf{Work Class} & \textbf{Name (Work entailed)} & \textbf{Status} \\ \hline
+    \rowcolor{na} - & Root & Multi-robot Soccer - RoboCup & - \\ \hline
+    %--------------------
+    % Software
+    %--------------------
+    \rowcolor{p} 1 & Category & Software & In Progress \\ \hline
+    \rowcolor{d} 1.1 & Work Package & Simulate 12 robots & Completed \\ \hline
+    \rowcolor{d} 1.1.1 & Deliverable & Setup grSim & Completed \\ \hline
+    \rowcolor{d} 1.1.1.1 & Task & Download grSim & Completed \\ \hline
+    \rowcolor{d} 1.1.1.2 & Task & Run the simulation correctly & Completed \\ \hline
+    \rowcolor{d} 1.1.2 & Work Package & Simulation interface (\acs{api}) & Completed \\ \hline
+    \rowcolor{d} 1.1.2.1 & Deliverable & Integrate Protobuf & Completed \\ \hline
+    \rowcolor{d} 1.1.2.2 & Deliverable & Move a single robot & Completed \\ \hline
+    \rowcolor{d} 1.1.2.3 & Deliverable & Activate kicker on a single robot & Completed \\ \hline
+    \rowcolor{d} 1.1.2.4 & Deliverable & Activate dribbler on a single robot & Completed \\ \hline
+    \rowcolor{d} 1.1.2.5 & Deliverable & Execute any desired control over any chosen robot in grSim & Completed \\ \hline
+    \rowcolor{d} 1.2 & Work Package & \acs{ssl} interface (\acs{api}) & Completed \\ \hline
+    \rowcolor{d} 1.2.1 & Deliverable & Integrate ssl-vision & Completed \\ \hline
+    \rowcolor{d} 1.2.1.1 & Task & Receive single package containing positional data & Completed \\ \hline
+    \rowcolor{d} 1.2.1.2 & Task & Receive continuous positional data & Completed \\ \hline
+    \rowcolor{d} 1.2.2 & Deliverable & Integrate ssl-game-controller (human referee and optional auto referee) & Completed \\ \hline
+    \rowcolor{d} 1.2.2.1 & Task & Receive a single package containing referee commands/signals & Completed \\ \hline
+    \rowcolor{d} 1.2.2.2 & Task & Receive continuous stream of referee commands/signals & Completed \\ \hline
+    \rowcolor{d} 1.2.2.3 & Task & Integrate AutoReferee & Completed \\ \hline
+    \rowcolor{d} 1.2.3 & Deliverable & Develop an automatic game controller (will be used when training the \acs{ai}) & Completed \\ \hline
+    \rowcolor{d} 1.2.3.1 & Task & Research and obtain proper understanding of \acs{ssl}-rules & Completed \\ \hline
+    \rowcolor{d} 1.2.3.2 & Task & Implement the automatic game controller system & Completed \\ \hline
+    \rowcolor{p} 1.3 & Work Package & Hardware interface (\acs{api}) & In Progress \\ \hline
+    \rowcolor{c} 1.3.1 & Deliverable & Basestation communication & Cancelled \\ \hline
+    \rowcolor{c} 1.3.1.1 & Task & Configure basestation RF communication & Cancelled \\ \hline
+    \rowcolor{p} 1.3.2 & Deliverable & Wheel motor interface & In Progress \\ \hline
+    \rowcolor{p} 1.3.2.1 & Task & Establish communication using \acs{uart} & In Progress \\ \hline
+    \rowcolor{u} 1.3.2.2 & Task & Implement \acs{foc} & Upcoming \\ \hline
+    \rowcolor{u} 1.3.2.3 & Task & Implement a velocity distributor (subscribing to cmd\_vel) & Upcoming \\ \hline
+    \rowcolor{u} 1.3.3 & Deliverable & Kicker interface & Upcoming \\ \hline
+    \rowcolor{u} 1.3.3.1 & Task & \acs{gpio} implement activation & Upcoming \\ \hline
+    \rowcolor{u} 1.3.4 & Deliverable & Dribbler interface & Upcoming \\ \hline
+    \rowcolor{u} 1.3.4.1 & Task & Implement \acs{pwm} control & Upcoming \\ \hline
+    \rowcolor{p} 1.3.5 & Work Package & Sensor interface & In Progress \\ \hline
+    \rowcolor{p} 1.3.5.1 & Deliverable & \acs{imu} & In Progress \\ \hline
+    \rowcolor{c} 1.3.5.1.1 & Task & \acs{spi} implementation & Cancelled \\ \hline
+    \rowcolor{p} 1.3.5.1.2 & Task & \acs{i2c} implementation & In Progress \\ \hline
+    \rowcolor{u} 1.3.5.1.3 & Task & Communicate using \acs{uart} & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.2 & Deliverable & Wheel encoders & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.2.1 & Task & Configure wheel encoders & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.3 & Deliverable & Camera & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.4 & Deliverable & \acs{lidar} & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.4.1 & Task & \acs{i2c} implementation & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.4.2 & Task & Communicate using \acs{uart} & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.5 & Deliverable & RGB sensor & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.5.1 & Task & \acs{i2c} implementation & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.5.2 & Task & Communicate using \acs{uart} & Upcoming \\ \hline
+    \rowcolor{u} 1.3.5.6 & Deliverable & Break beam & Upcoming \\ \hline
+    \rowcolor{u} 1.3.6 & Deliverable & Provide robot status information & Upcoming \\ \hline
+    \rowcolor{u} 1.3.6.1 & Task & \acs{cpu} temperature & Upcoming \\ \hline
+    \rowcolor{u} 1.3.6.2 & Task & Battery charge & Upcoming \\ \hline
+    \rowcolor{p} 1.3.7 & Deliverable & Establish communication between Raspberry Pi and Nucleo 144 & In Progress \\ \hline
+    \rowcolor{p} 1.3.7.2 & Task & Install micro-\acs{ros} on Raspberry Pi and Nucleo 144 (\acs{uart}) & In Progress \\ \hline
+    \rowcolor{u} 1.3.7.3 & Task & Implement \acs{ros} functionality & Upcoming \\ \hline
+    \rowcolor{u} 1.3.8 & Deliverable & Establish communication between Nucleo 144 and motor drivers & Upcoming \\ \hline
+    \rowcolor{u} 1.3.8.1 & Task & Communicating using \acs{uart} & Upcoming \\ \hline
+    \rowcolor{h} 1.4 & Work Package & Communication protocol (\acs{api}) & On Hold \\ \hline
+    \rowcolor{h} 1.4.1 & Deliverable & Establish communication between \acs{pc} and Raspberry Pi & On Hold \\ \hline
+    \rowcolor{h} 1.4.1.1 & Task & Using Wi-Fi & On Hold \\ \hline
+    \rowcolor{u} 1.4.2 & Deliverable & Integrate Protobuf & Upcoming \\ \hline
+    \rowcolor{u} 1.4.3 & Deliverable & Utilizing \acs{ros2} & Upcoming \\ \hline
+    \rowcolor{u} 1.4.4 & Deliverable & Ability to switch between two carrier frequencies & Upcoming \\ \hline
+    \rowcolor{p} 1.5 & Work Package & Individual robot behaviour (finding the best way to do the things it has been commanded to do) & In Progress \\ \hline
+    \rowcolor{d} 1.5.1 & Deliverable & Research viable path planning algorithms & Completed \\ \hline
+    \rowcolor{d} 1.5.2 & Deliverable & Integrate \acs{ros2} & Completed \\ \hline
+    \rowcolor{d} 1.5.2.1 & Task & Getting sensor data & Completed \\ \hline
+    \rowcolor{d} 1.5.2.2 & Task & Getting odometry data & Completed \\ \hline
+    \rowcolor{d} 1.5.3 & Deliverable & Develop path planning algorithm & Completed \\ \hline
+    \rowcolor{d} 1.5.3.1 & Task & Build using nav2 & Completed \\ \hline
+    \rowcolor{d} 1.5.4 & Deliverable & Implement robot ability to shoot & Completed \\ \hline
+    \rowcolor{d} 1.5.4.1 & Task & Angle correctly towards target & Completed \\ \hline
+    \rowcolor{d} 1.5.4.2 & Task & Shoot towards target & Completed \\ \hline
+    \rowcolor{p} 1.5.5 & Deliverable & nav2 stack configuration & In Progress \\ \hline
+    \rowcolor{p} 1.5.5.1 & Task & Create nav2 parameter files & In Progress \\ \hline
+    \rowcolor{p} 1.5.5.2 & Task & Create nav2 launch files & In Progress \\ \hline
+    \rowcolor{h} 1.5.6 & Work Package & Develop supporting functions & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.1 & Deliverable & Run Simulation/Hardware interface & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.1.1 & Task & Run and call on Simulation interface & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.1.2 & Task & Run and call on Hardware interface & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.2 & Deliverable & Ability to send data & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.2.1 & Task & Sending robot status (\acs{cpu} temperature and battery charge) & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.2.2 & Task & Sending acknowledgements that commanded task has been completed & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.3 & Deliverable & Ability to receive data & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.3.1 & Task & Ability to receive initialization data from collective robot behaviour (ID, home playing side, starting pose) & On Hold \\ \hline
+    \rowcolor{h}1.5.6.3.2 & Task & Ability to receive control commands from collective robot behaviour & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.3.3 & Task & Ability to receive pose correction data from collective robot behaviour & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.4 & Deliverable & Initialize the robot & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.4.1 & Task & Getting robot ID & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.4.2 & Task & Obtaining information about which playing side of the field is friendly & On Hold \\ \hline
+    \rowcolor{h} 1.5.6.4.3 & Task & Getting the start pose & On Hold \\ \hline
+    \rowcolor{p} 1.6 & Work Package & Collective robot behaviour/ Centralised strategy planner (Handles what each individual robot should do to obtain a win for the team) & In Progress \\ \hline
+    \rowcolor{d} 1.6.1 & Deliverable & Research \acs{ai}-algorithms & Completed \\ \hline
+    \rowcolor{d} 1.6.1.1 & Task & Outline actions & Completed \\ \hline
+    \rowcolor{d} 1.6.1.2 & Task & Outline world representation (input) & Completed \\ \hline
+    \rowcolor{p} 1.6.2 & Deliverable & Develop \acs{ai} for strategy planning & In Progress \\ \hline
+    \rowcolor{p} 1.6.2.1 & Task & Develop the \acs{ai}-algorithm & In Progress \\ \hline
+    \rowcolor{u} 1.6.2.2 & Task & Train the \acs{ai}-algorithm & Upcoming \\ \hline
+    \rowcolor{u} 1.6.3 & Deliverable & Be able to send data & Upcoming \\ \hline
+    \rowcolor{u} 1.6.3.1 & Task & Provide initialization data to all robots & Upcoming \\ \hline
+    \rowcolor{u} 1.6.3.2 & Task & Be able to send control commands to robots & Upcoming \\ \hline
+    \rowcolor{u} 1.6.3.3 & Task & Be able to send pose correction data to robots & Upcoming \\ \hline
+    \rowcolor{p} 1.6.4 & Deliverable & Be able to receive data & In Progress \\ \hline
+    \rowcolor{p} 1.6.4.1 & Task & Be able to receive robot status information & In Progress \\ \hline
+    \rowcolor{p} 1.6.4.2 & Task & Be able to receive referee commands and signals from \acs{ssl} interface & In Progress \\ \hline
+    \rowcolor{d} 1.6.4.3 & Task & Be able to receive positional data from \acs{ssl} interface & Completed \\ \hline
+    \rowcolor{u} 1.6.5 & Deliverable & Ability to switch playing half on demand & Upcoming \\ \hline
+    %--------------------
+    % Hardware
+    %--------------------
+    \rowcolor{p} 2 & Category & Hardware & In Progress \\ \hline
+    \rowcolor{p} 2.1 & Work Package & Base design & In Progress \\ \hline
+    \rowcolor{d} 2.1.1 & Deliverable & Hardware design to meet \acs{ssl}-rules & Completed \\ \hline
+    \rowcolor{d} 2.1.1.1 & Task & Research for chassis design & Completed \\ \hline
+    \rowcolor{d} 2.1.1.2 & Task & Chassis \acs{bom} & Completed \\ \hline
+    \rowcolor{d} 2.1.1.3 & Task & Powertrain \acs{bom} & Completed \\ \hline
+    \rowcolor{d} 2.1.1.4 & Task & Sensor \acs{bom} & Completed \\ \hline
+    \rowcolor{d} 2.1.1.5 & Task & Kicker \acs{bom} & Completed \\ \hline
+    \rowcolor{d} 2.1.2 & Deliverable & Design modular components & Completed \\ \hline
+    \rowcolor{d} 2.1.2.1 & Task & Allow for battery swap & Completed \\ \hline
+    \rowcolor{d} 2.1.2.2 & Task & Allow for motor swap & Completed \\ \hline
+    \rowcolor{p} 2.1.3 & Work Package & 3D-design & In Progress \\ \hline
+    \rowcolor{d} 2.1.3.1 & Deliverable & Chassis design & Completed \\ \hline
+    \rowcolor{d} 2.1.3.2 & Deliverable & Wheel design & Completed \\ \hline
+    \rowcolor{d} 2.1.3.2.1 & Task & Wheel hub design & Completed \\ \hline
+    \rowcolor{d} 2.1.3.2.1 & Task & Subwheel design & Completed \\ \hline
+    \rowcolor{p} 2.1.3.3 & Deliverable & Dribbler design & In Progress \\ \hline
+    \rowcolor{d} 2.1.3.4 & Deliverable & Kicker assembly design & Completed \\ \hline
+    \rowcolor{p} 2.1.3.5 & Deliverable & Mounting design & In Progress \\ \hline
+    \rowcolor{p} 2.1.3.5.1 & Task & Encoder mount & In Progress \\ \hline
+    \rowcolor{d} 2.1.3.5.2 & Task & Motor mount & Completed \\ \hline
+    \rowcolor{d} 2.1.3.5.3 & Task & Battery mount & Completed \\ \hline
+    \rowcolor{d} 2.1.3.5.4 & Task & Dribbler mount & Completed \\ \hline
+    \rowcolor{p} 2.1.4 & Work Package & Circuit design and integration & In Progress \\ \hline
+    \rowcolor{d} 2.1.4.1 & Deliverable & Design powertrain circuit & Completed \\ \hline
+    \rowcolor{p} 2.1.4.2 & Deliverable & Design kicker circuit & In Progress \\ \hline
+    \rowcolor{d} 2.1.4.3 & Deliverable & Design dribbler circuit & Completed \\ \hline
+    \rowcolor{d} 2.1.4.4 & Deliverable & Design microcontroller circuit & Completed \\ \hline
+    \rowcolor{d} 2.1.4.5 & Deliverable & Design \acs{ic} for sensors & Completed \\ \hline
+    \rowcolor{d} 2.1.4.5.1 & Task & Design \acs{imu} \acs{ic} & Completed \\ \hline
+    \rowcolor{d} 2.1.4.5.2 & Task & Design wheel encoder \acs{ic} & Completed \\ \hline
+    \rowcolor{c} 2.1.4.5.3 & Task & Design break beam \acs{ic} & Cancelled \\ \hline
+    \rowcolor{p} 2.1.4.6 & Deliverable & Integrate the circuits & In Progress \\ \hline
+    \rowcolor{d} 2.1.4.7 & Deliverable & Design mainboard \acs{pcb} & Completed \\ \hline
+    \rowcolor{d} 2.1.4.8 & Deliverable & Design carrier \acs{pcb} for motor driver & Completed \\ \hline
+    \rowcolor{p} 2.1.4.9 & Deliverable & Design kicker \acs{pcb} & In Progress \\ \hline
+    \rowcolor{c} 2.1.4.10 & Deliverable & Design basestation \acs{pcb} & Cancelled \\ \hline
+    \rowcolor{p} 2.2 & Work Package & Manufacturing & In Progress \\ \hline
+    \rowcolor{p} 2.2.1 & Deliverable & Manufacture \acs{pcb} & In Progress \\ \hline
+    \rowcolor{d} 2.2.1.1 & Task & Mainboard & Completed \\ \hline
+    \rowcolor{c} 2.2.1.2 & Task & Basestation & Cancelled \\ \hline
+    \rowcolor{u} 2.2.1.3 & Task & Kicker board & Upcoming\\ \hline
+    \rowcolor{d} 2.2.1.4 & Task & Motor driver carrier board & Completed \\ \hline
+    \rowcolor{u} 2.2.2 & Deliverable & Manufacture 3D-designed items & Upcoming \\ \hline
+    \rowcolor{u} 2.2.2.1 & Task & Manufacture chassis & Upcoming \\ \hline
+    \rowcolor{u} 2.2.2.2 & Task & Manufacture wheels & Upcoming \\ \hline
+    \rowcolor{u} 2.2.2.3 & Task & Manufacture dribbler & Upcoming \\ \hline
+    \rowcolor{u} 2.2.2.4 & Task & Manufacture kicker assembly & Upcoming \\ \hline
+    \rowcolor{u} 2.2.2.5 & Task & Manufacture mountings & Upcoming \\ \hline
+    \rowcolor{u} 2.3 & Work Package & Testing & Upcoming \\ \hline
+    \rowcolor{u} 2.3.1 & Deliverable & Test motors & Upcoming \\ \hline
+    \rowcolor{u} 2.3.2 & Deliverable & Test kicker & Upcoming \\ \hline
+    \rowcolor{u} 2.3.3 & Deliverable & Test dribbler & Upcoming \\ \hline
+    \rowcolor{u} 2.3.4 & Deliverable & Test sensors & Upcoming \\ \hline
+    \rowcolor{u} 2.3.4.1 & Task & Test \acs{imu} & Upcoming \\ \hline
+    \rowcolor{u} 2.3.4.2 & Task & Test wheel encoders & Upcoming \\ \hline
+    \rowcolor{u} 2.3.4.3 & Task & Test camera & Upcoming \\ \hline
+    \rowcolor{u} 2.3.4.4 & Task & Test \acs{lidar} & Upcoming \\ \hline
+    \rowcolor{u} 2.3.4.5 & Task & Test RGB sensor & Upcoming \\ \hline
+    \rowcolor{u} 2.3.5 & Deliverable & Validate the integrated circuits & Upcoming \\ \hline
+    \rowcolor{u} 2.3.5.1 & Task & Battery works correctly & Upcoming \\ \hline
+    \rowcolor{u} 2.3.5.2 & Task & \acs{ssl}-rule compliance & Upcoming \\ \hline
+    %--------------------
+    % HIL
+    %--------------------
+    \rowcolor{na} 3 & Category & \acs{hil} & - \\ \hline
+    \rowcolor{na} 3.1 & Work Package & Develop \acs{hil} & - \\ \hline
+    \rowcolor{na} 3.1.1 & Deliverable & Design a system to integrate hardware in simulation & - \\ \hline
+    \rowcolor{na} 3.1.2 & Deliverable & Test the \acs{hil} in simulation & - \\ \hline
+    \rowcolor{na} 3.1.3 & Deliverable & Ensure a smooth transition from simulation to physical robot hardware & - \\ \hline
+    \rowcolor{na} 3.2 & Work Package & Validate hardware platform & - \\ \hline
+    \rowcolor{na} 3.2.1 & Deliverable & Conduct \acs{hil} test to validate the performance & - \\ \hline
+%-------------------------------------------------------------------------------
+    \caption{Summary of completed and upcoming activities. Green for completed, orange for in progress, yellow for on hold, red for cancelled, blue for upcoming (part of the next work period which spans from November 8 to December 6) and gray for N/A (-). N/A (-) is anything outside the next work period (November 8 to December 6).}
+    \label{tab:activity_status}
+\end{longtable}
+\twocolumn
+
+%===============================================================================

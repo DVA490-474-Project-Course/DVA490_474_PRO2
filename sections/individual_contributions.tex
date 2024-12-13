@@ -1,0 +1,116 @@
+%===============================================================================
+\section{Individual Contributions}
+
+% !!! Reference back to the project plan !!!
+
+% Contributions
+This section will provide a summary of what each team member has worked on, their challenges and their contributions to the project goals:
+%-------------------------------------------------------------------------------
+\subsection*{Viktor Eriksson}
+\begin{itemize}
+    \item \textbf{Work}: Did research on \ac{ai}-algorithms 1.6.1, and then started to develop the \ac{ai} 1.6.2.1. Will be using \acf{mappo} algorithm for centralised strategy planing.
+    \item \textbf{Challenges}: The amount of information found about \ac{mappo} was very limited, the most informative paper does not provide fully correct information and contains misspellings. Despite this, \ac{mappo} was chosen because the algorithm has proven to be efficient in multi agent reinforcement learning applications. Additional challenges include combining other team members codes and having to adapt the code to make the integration work.
+    \item \textbf{Contributions to project goals}: Develop the strategy planing 1.6.2.
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Anton Grusell}
+\begin{itemize}
+    \item \textbf{Work}: 2.1.1.2 \textit{Chassis \acs{bom}}, 2.1.3 \textit{3D-design}, 2.1.3.1 \textit{Chassis design}, 2.1.3.2 \textit{Wheel design}, 2.1.3.3 \textit{Dribbler design}, 2.1.3.5 \textit{Mounting design} 2.1.4.3 \textit{Design dribbler circuit}, PRO1, PRO2, 
+    \item \textbf{Challenges}: Revisions to designs for compatibility, fulfilling the size constraints. The dribbler design proved problematic when trying to reduce size.
+    \item \textbf{Contributions to project goals}: Designing the chassis and wheels in \ac{cad}, designing the dribbler system and a test rig for it. Designing encoder mounts for the wheels. 
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Mudar Ibrahim}
+\begin{itemize}
+    \item \textbf{Work}: Mostly worked on team management, Progress Report structure and keeping work packages on-track. Also worked on 1.3 \textit{Hardware interface}, writing \ac{i2c} communication protocol. Additionally, reviewing this document on a continuous basis. 
+    \item \textbf{Challenges}: Using only one STM32 board extended the testing time, since the team had to wait for access to the board to test code.
+    Additionally, team management sometimes took longer than expected, causing other tasks to be pushed closer to their deadlines.
+    \item \textbf{Contributions to project goals}: 1.3 \textit{Hardware interface} and PRO2 structure. 
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Jacob Johansson}
+\begin{itemize}
+    \item \textbf{Work}: 1.6.1 Helped research state-of-the-art algorithms used for cooperative robots. 1.6.2.1 Develop core functions of the \ac{ai} algorithm.
+    \item \textbf{Challenges}: Papers lacking the proper citations for the original sources of certain equations used. This complicated development of the \ac{mappo} algorithm since it caused confusion about which equations was to be used.
+    \item \textbf{Contributions to project goals}: Writing functions for the \acf{mappo} algorithm, which dictates the strategy behaviour of the robots.
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Aaiza Aziz Khan}
+\begin{itemize}
+    \item \textbf{Work}: 1.1 \textit{Simulate 12 robots}, 1.1.2 \textit{Simulation interface}, 1.2 \textit{\acs{ssl} interface}.
+    \item \textbf{Challenges}: Initial difficulties in familiarising with new techniques, standards and tools.
+    \item \textbf{Contributions to project goals}: Contributed in developing ssl-vision client, automatic game controller, and some functions in 1.1.2 and 1.2. Writing test suites for ssl-vision client, ssl-game-controller client and \textit{Simulation interface}.
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Carl Larsson}
+\begin{itemize}
+    \item \textbf{Work}: 1.5 \textit{Individual robot behaviour}, 1.5.6 \textit{Develop supporting functions}, PRO1, PRO2, management and support for the team.
+    \item \textbf{Challenges}: Time management and designing a suitable software structure so that the different software parts will be able to be integrated properly. nav2 stack error, prolonging the expected development time of 1.5.5 \textit{nav2 stack configuration} significantly.
+    \item \textbf{Contributions to project goals}: Writing code for the executable which will run on the robots, it is tasked with finding a suitable way to realize the commands from the centralized strategy planner. Substantial documentation efforts.
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Johanna Melander}
+\begin{itemize}
+    \item \textbf{Work}: 2.1.1.5 \textit{Kicker \acs{bom}}, 2.1.3.2 \textit{Wheel design}, 2.1.4.2 \textit{Design kicker circuit}, PRO1, PRO2.
+    \item \textbf{Challenges}:
+    The test solenoid did not arrive on time, so it has not been possible to experiment as much as desired. 
+    \item \textbf{Contributions to project goals}:
+    Researched about the wheels and kicker design. Designing a simple kicker test rig and an initial version of the wheels in \ac{cad}. Designing kicker circuit in KiCAD, created \ac{bom} for kicker circuit. 
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Shruthi Puthiya Kunnon}
+\begin{itemize}
+    \item \textbf{Work}: Work Packages 1.1 \textit{Simulate 12 robots}, 1.1.2 \textit{Simulation interface}, 1.2 \textit{\acs{ssl} interface}. 
+    \item \textbf{Challenges}: Initially, struggled to understand the standards and tools.
+    \item \textbf{Contributions to project goals}: Worked on the development of 1.1.2 and 1.2. Developed test suites for \textit{Simulation interface}, \textit{\acs{ssl} interface}, ssl-game-controller. 
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Pontus Svensson}
+\begin{itemize}
+    \item \textbf{Work}: 2.1.1.3 \textit{Powertrain \acs{bom}}, 2.1.2 \textit{Design modular components}, 2.1.4 \textit{Circuit design and integration}, 2.2 \textit{Manufacturing}, 2.2.1.4 ordered motor driver carrier board. Trying to make the collaboration work with \ac{udea} and \ac{utp}.
+    \item \textbf{Challenges}: Some initial difficulties regarding which components were allowed to be used, delayed the initial work packages. Size constraints in the robot leads to peculiar solutions for fitting all \acp{esc} and sensors resulting in almost every rule imaginable being broken regarding \ac{pcb} design. 
+    \item \textbf{Contributions to project goals}: Designing the mainboard, motor carrier, and encoder \ac{pcb}, reaching out to other teams for guidance and feedback.  
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Fredrik Westerbom}
+\begin{itemize}
+    \item \textbf{Work}: Deliverables 1.3.2, and 1.3.5.1, and 2.1.4.5. Tasks 2.1.1.4, and 2.3.4.1.
+    \item \textbf{Challenges}: The task 2.3.4.1 requires a communication protocol to receive and transmit data. \ac{spi} was initially chosen (before abandoned) due to its speed and low latency. Additional pre-requisite tasks have been discovered, the duration of the task has therefore increased. These additional tasks include research into \ac{spi}, installing and getting familiarized with the recommended programming environment as well as the development board NUCLEO-H723ZG.
+    Deliverable 1.3.2 is in the startup phase which in short includes pre-studies to familiarize with the development environment as well as acquire the necessary level of understanding to implement \ac{foc}.
+    \item \textbf{Contributions to project goals}: The deliverables and tasks are identified to be crucial sub-tasks for the success of the project.
+\end{itemize}
+%-------------------------------------------------------------------------------
+\subsection*{Emil Åberg}
+\begin{itemize}
+    \item \textbf{Work}: Work Packages 1.1, 1.1.2, organize \textit{\acs{ssl} interface} (Work package 1.2), help with deliverables 1.2.1, 1.2.2, implement collision detection and tests for the automatic game controller (1.2.3.2). Just started on \textit{Hardware interface} (1.3).
+    \item \textbf{Challenges}: A way to control simulation speed has not been developed yet. For the sake of training the \ac{ai}, it would be best not to be limited to having it run in real time.
+    \item \textbf{Contributions to project goals}: Develop \textit{Simulation interface}, structure and help implement \textit{\acs{ssl} interface}.
+\end{itemize}
+%-------------------------------------------------------------------------------
+
+
+%===============================================================================
+
+\begin{comment}
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\columnwidth}{|c|X|X|X|} \hline
+         \textbf{Name} & \textbf{Work} & \textbf{Challenges} & \textbf{Contributions to project goals} \\ \hline
+         Viktor Eriksson & Collective robot behaviour&Creating the AI-model in C++, lack of information for the API. & Development of the AI model and strategy planning\\ \hline
+         Anton Grusell & 2.1.3 3D-design, 2.1.3.1 Chassi design, 2.1.3.2 Wheel design 2.1.4.3 Design dribbler circuit&  & Working on the robot design and ensuring that everything will fit. Designing a dribbler system.\\ \hline
+         Mudar Ibrahim & & & \\ \hline
+         Jacob Johansson & 1.7.1.1 Researching MAPPO 1.7.1.2 Develop core functions and tests & Lack of documentation on Pytorch library. &  \\ \hline
+         Aaiza Aziz Khan & & & \\ \hline
+         Carl Larsson & 1.5.2 Integrate ROS2, 1.5.3 Develop path planning algorithm, 1.5.4 Implement robot ability to shoot, PRO1, PRO2, Management & Time management, Design software structure & Writing code for the executable which will run on the robots, it tasked with finding a suitable way to realize the command from the centralized strategy planner \\ \hline
+         Johanna Melander & & & \\ \hline
+         Shruthi Puthiya Kunnon & & & \\ \hline
+         Pontus Svensson & 2.1.1 Hardware design to meet SSL-rules, 2.1.2 Design modular components, PRO1, PRO2 & Time management, planning and have to redo planning takes a lot of time & Reaching out to companies for help with \ac{pcb} manufacturing. Reaching out to other teams for guidance and knowledge.  \\ \hline
+         Fredrik Westerbom & & & \\ \hline
+         Emil Åberg & & & \\ \hline
+    \end{tabularx}
+    \caption{The work done by each team member, the challenges they have encountered and their contributions to the project goals.}
+    \label{tab:individual_contributions}
+\end{table}
+\end{comment}
+
+%===============================================================================
